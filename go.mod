@@ -1,4 +1,4 @@
-module github.com/maxjoehnk/terraform-provider-iis
+module github.com/nrgribeiro/terraform-provider-iis
 
 go 1.15
 

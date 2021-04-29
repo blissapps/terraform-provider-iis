@@ -24,6 +24,7 @@ func Provider() *schema.Provider {
 			"iis_application":      resourceApplication(),
 			"iis_authentication":   resourceAuthentication(),
 			"iis_website":          resourceWebsite(),
+			"iis_file":          	resourceFile(),
 		},
 		DataSourcesMap: map[string]*schema.Resource{
 			"iis_website": dataSourceIisWebsite(),

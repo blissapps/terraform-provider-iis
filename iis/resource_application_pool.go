@@ -26,7 +26,7 @@ func resourceApplicationPool() *schema.Resource {
 			ManagedRuntimeKey: {
 				Type:     schema.TypeString,
 				Optional: true,
-				Default:  "",
+				Default: "",
 			},
 			StatusKey: {
 				Type:     schema.TypeString,

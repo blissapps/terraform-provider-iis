@@ -2,9 +2,9 @@ package iis
 
 import (
 	"context"
+	"github.com/nrgribeiro/microsoft-iis-administration"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/nrgribeiro/microsoft-iis-administration"
 )
 
 const nameKey = "name"

@@ -18,6 +18,7 @@ provider "iis" {
 ```hcl
 resource "iis_application_pool" "name" {
   name = "AppPool" // Name of the Application Pool
+  runtime = "" // (optional) null or empty for "No Managed Code" or "vX.Y" to specify version
 }
 ```
 
@@ -39,7 +40,7 @@ data "iis_website" "website-domain-com" {
   name = "website.domain.com"
   physical_path = "%systemdrive%\\inetpub\\your_app" // full path to website folder
   application_pool = iis_application_pool.name.id
-  binding {
+  bindings   {
     protocol = "http"
     port = 80
     ip_address = "*"
